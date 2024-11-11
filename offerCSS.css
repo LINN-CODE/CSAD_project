@@ -1,0 +1,361 @@
+.navbar-brand {
+    font-weight: 500;
+    color: #ffcc00;
+    font-size: 24px;
+    transition: 0.3s color;
+    margin-right: 50px; /* Adjust the margin as needed */
+}
+
+.login-button {
+    background-color: #009770;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-left: 50px; /* Adjust the margin as needed */
+}
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+}
+
+.login-button:hover {
+    background-color: #00bb33;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.offcanvas-body .nav-item {
+    color: white;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #000;
+}
+
+
+.navbar .nav-item .nav-link {
+    color: #ffffff;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #ffcc00; 
+}
+
+
+.offcanvas.show .nav-item .nav-link {
+    color: #000000; 
+}
+
+.offcanvas.show .nav-item .nav-link:hover {
+    color: #ffcc00; 
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.offcanvas-body .navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+
+.offcanvas-body .nav-link {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #ffcc00;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.offer_section{
+    background: url(./offerImages/offer_top2.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:80vh;
+}
+.offer_section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+}
+.offer_section .container {
+    height: 80vh;
+    z-index: 1;
+    position: relative;
+    
+}
+
+.offer-mid-section {
+  padding:  5px; 
+  background-color: #d55f2a;
+}
+
+.offer-mid-section .container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.clickable-card {
+    cursor: pointer;
+
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: none;
+}
+
+.clickable-card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    transition: transform 1s ease; 
+}
+
+.clickable-card:hover img {
+    transform: scale(1.05); 
+}
+
+.clickable-card .offer-card-body { 
+    position: relative; 
+    z-index: 2;        
+}
+ 
+.clickable-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 1s ease; 
+    opacity: 0;  
+    z-index: 1;
+}
+
+.clickable-card::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    z-index: 3;  
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+ 
+.clickable-card:hover::before,
+.clickable-card:hover::after {
+  opacity: 1;  
+}
+
+
+.offer-card-body {
+  background-color: #cf2906;
+  padding: 20px;
+  width: 100%;
+  height: 70px;
+}
+
+
+.offer-content {
+  padding: 1rem; 
+}
+
+
+.offer-title {
+  color: white;
+  font-weight: bold;
+}
+
+.offer-description {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) { 
+  .offer-title {
+    font-size: 2rem; 
+  }
+
+  .offer-description {
+    font-size: 1rem; 
+  }
+} 
+
+@media (max-width: 576px) {
+  .offer-title {
+    font-size: 1.5rem; 
+  }
+}
+.offer-info-hero {
+  padding: 4rem 0;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-content p {
+  font-size: 1.1rem; 
+}
+
+.terms-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.arrow.down {
+    transform: rotate(45deg);
+}
+
+.arrow.up {
+    transform: rotate(-135deg);
+}
+
+.footer {
+    background-color: #333; 
+    color: #ddd; 
+    padding: 40px 0; 
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px solid #444; 
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px; 
+    text-align: left; 
+}
+
+.footer-column h3 {
+    color: #ffcc00; 
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    border-bottom: 2px solid #ffcc00; 
+    padding-bottom: 10px; 
+}
+
+.footer-column p, .footer-column a {
+    color: #bbb; 
+    font-size: 14px;
+    line-height: 1.8; 
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffcc00; 
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #ffcc00; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    color: #333;
+    font-size: 24px; 
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.newsletter button:hover {
+    background-color: #e6b800; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #bbb;
+    font-size: 12px;
+    border-top: 1px solid #444;
+}

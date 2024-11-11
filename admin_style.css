@@ -1,0 +1,65 @@
+body {
+    background-image: url('./offerImages/admin.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.navbar {
+    background-color: #ba2e1c;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.nav-item .nav-link.active {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+.table thead th {
+    background-color: #ba2e1c;
+    color: #fff;
+}
+.table tbody tr {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-primary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        margin-top: 20px;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+}

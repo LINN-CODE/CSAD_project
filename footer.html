@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+.footer {
+    background-color: #333; 
+    color: #ddd; 
+    padding: 40px 0; 
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px solid #444; 
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px; 
+    text-align: left; 
+}
+
+.footer-column h3 {
+    color: #ffcc00; 
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    border-bottom: 2px solid #ffcc00; 
+    padding-bottom: 10px; 
+}
+
+.footer-column p, .footer-column a {
+    color: #bbb; 
+    font-size: 14px;
+    line-height: 1.8; 
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffcc00; 
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #ffcc00; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    color: #333;
+    font-size: 24px; 
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.newsletter button:hover {
+    background-color: #e6b800; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #bbb;
+    font-size: 12px;
+    border-top: 1px solid #444; 
+}
+        </style>
+    </head>
+    
+    <body>
+        <footer>
+            <div class="footer">
+                <div class="footer-column">
+                    <h3>Restaurant Name</h3>
+                    <p>Restaurant address (postal code)</p>
+                    <p>+65 xxxxxxxx</p>
+                    <p>example.email@gmail.com</p>
+                    <div class="logo">
+                        <span>LOGO</span>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <p>Breakfast, Daily<br>6:30am to 10:30am</p>
+                    <p>Lunch, Daily<br>12:00pm to 2:30pm</p>
+                    <p>Saturday Brunch, Sat<br>12:00pm to 3:00pm</p>
+                    <p>Dinner, Sun to Thu<br>6:00pm to 10:00pm</p>
+                    <p>Dinner, Fri, Sat & Eve of PH<br>6:00pm to 10:30pm</p>
+                    <p>Special Menu, Fri, Sat & Sun</p>
+                </div>
+                <div class="footer-column newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="subscribe.php" method="post" id="subscribeForm">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p>Links to social media</p>
+                    <h3>FAQ</h3>
+                    <p><a href="#">Terms and conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
